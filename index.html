@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, HER_NAME!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #ffe4e1, #d8f3dc);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #fff;
+    }
+
+    .intro h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .message-box, .reasons-box {
+      background-color: white;
+      border-radius: 20px;
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 700px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .message-box p, .reasons-box ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .reasons-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .gallery-box {
+      background-color: white;
+      border-radius: 20px;
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 700px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .slideshow {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .slideshow img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .final {
+      background: #ffc8dd;
+      color: #fff;
+      position: relative;
+    }
+
+    .hearts {
+      font-size: 2rem;
+      animation: float 3s infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-50px); opacity: 0.5; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🎵 Background Song -->
+<audio autoplay loop>
+  <source src="YOUR_SONG_LINK.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- 🎈 Intro Section -->
+<section class="intro">
+  <h1>Happy Birthday, HER_NAME! 🎂</h1>
+  <h2>Today, the world got a little brighter because of you 💫</h2>
+</section>
+
+<!-- 💌 Birthday Message -->
+<section>
+  <div class="message-box">
+    <h2>A Message from My Heart</h2>
+    <p>
+      You’re more than a friend — you’re a sister, a safe space, a forever part of my life. You’ve brought light, laughter, and love into every moment we’ve shared. On your birthday, I want to remind you just how special you are to me.
+    </p>
+    <p>Keep shining, keep smiling, and keep being YOU — because that’s your magic 💖</p>
+  </div>
+</section>
+
+<!-- 🌟 Why You're Special -->
+<section>
+  <div class="reasons-box">
+    <h2>Why You’re So Special 🌈</h2>
+    <ul>
+      <li>💛 You always listen — like *really* listen</li>
+      <li>😂 You make me laugh even when I don't want to</li>
+      <li>🤝 You're loyal, real, and trustworthy</li>
+      <li>🌻 You lift others up without trying</li>
+      <li>✨ You make life feel like an adventure</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 📸 Photo Slideshow -->
+<section>
+  <div class="gallery-box">
+    
+    <div class="slideshow">
+      <img id="slideshow-img" src="PHOTO1_URL.jpg" alt="Slideshow">
+    </div>
+  </div>
+</section>
+
+<!-- 🎂 Final Wish -->
+<section class="final">
+  <h2>One Last Thing...</h2>
+  <p style="font-size: 1.2rem;">
+    No matter where life takes us, you’ll always be my soul sister. I’ll be here for you through every laugh, cry, win, and fall.  
+  </p>
+  <p><strong>Happy Birthday again, HER_NAME 🎉🎈 Love you always! 💕</strong></p>
+  <div class="hearts">💖💖💖</div>
+</section>
+
+<!-- 🎞️ Slideshow Script -->
+<script>
+  const images = [
+    "PHOTO1_URL.jpg",
+    "PHOTO2_URL.jpg",
+    "PHOTO3_URL.jpg",
+    "PHOTO4_URL.jpg"
+  ];
+  let index = 0;
+  const imgElement = document.getElementById("slideshow-img");
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    imgElement.src = images[index];
+  }, 3000);
+</script>
+
+</body>
+</html>
